@@ -8,3 +8,4 @@ CREATE TABLE info (
 , "type" varchar(30), isdefault INTEGER);
 
 Criar 2 registros, um local e um remote com os dados das conexões MySQL.
+driverclassname tem o valor 'com.mysql.cj.jdbc.Driver'
