@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>955</width>
+    <height>843</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Blog Desktop</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frameBotoes">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>760</y>
+      <width>871</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="btnNovaPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nova Publicação</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSalvarPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>10</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Salvar Publicação</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnConfiguracoes">
+     <property name="geometry">
+      <rect>
+       <x>682</x>
+       <y>10</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Configurações...</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCancelar">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>10</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cancelar</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="cboTitulosPublicados">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>751</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>122</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Títulos Publicados</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frameCampos">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>100</y>
+      <width>871</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="txtLinkImagem">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>330</y>
+       <width>791</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Link da Imagem da Publicação</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtPublicadoEm">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>270</y>
+       <width>281</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(52, 101, 164);</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Data da Primeira Publicação</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cboTipoPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>361</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="placeholderText" stdset="0">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtTituloPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>90</y>
+       <width>791</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Título da Publicação</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtTagsPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>150</y>
+       <width>791</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Tags da Publicação</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtURLPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>210</y>
+       <width>791</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(52, 101, 164);</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>URL da Publicação no Site</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>6</y>
+       <width>126</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tipo de Publicação</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtRevisadoEm">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>270</y>
+       <width>281</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(52, 101, 164);</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Última Revisão Em</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="chkPublicacaoAtiva">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>270</y>
+       <width>141</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Publicação Ativa?</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="txtTextoPublicacao">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>390</y>
+       <width>791</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>68</y>
+       <width>40</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Título</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>130</y>
+       <width>131</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Tags Relacionadas</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>190</y>
+       <width>78</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>URL no Site</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>250</y>
+       <width>131</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Data de Publicação</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>250</y>
+       <width>111</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Data de Revisão</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>310</y>
+       <width>211</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Link da Imagem da Publicação</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>370</y>
+       <width>211</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Texto Publicado</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnLerPublicacao">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>60</y>
+      <width>51</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Exibir Publicação Apenas</string>
+    </property>
+    <property name="text">
+     <string>🔍</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEditarPublicacao">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>60</y>
+      <width>51</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Exibir e Editar Publicação</string>
+    </property>
+    <property name="text">
+     <string>☰</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

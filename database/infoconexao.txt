@@ -1,0 +1,10 @@
+-- info definition
+
+CREATE TABLE info (
+	url varchar(255),
+	username varchar(50),
+	password varchar(100),
+	driverclassname varchar(100)
+, "type" varchar(30), isdefault INTEGER);
+
+Criar 2 registros, um local e um remote com os dados das conexões MySQL.
